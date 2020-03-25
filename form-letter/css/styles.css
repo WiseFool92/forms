@@ -1,3 +1,10 @@
-#story {
+#letter {
   display: none;
+}
+
+body {
+  background-image: url(https://i.pinimg.com/originals/2d/23/b3/2d23b3a9eccb15a49d30a9949e8c1d63.jpg);
+  background-repeat: repeat;
+  background-size: cover;
+  font-family: "Indie Flower", cursive;
 }
