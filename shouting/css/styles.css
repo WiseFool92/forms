@@ -1,3 +1,15 @@
-#story {
+#letter {
   display: none;
+}
+
+.shouting {
+  background-image: url("https://media.giphy.com/media/13USt1URETlUFG/giphy.gif");
+  background-repeat: round;
+  background-size: cover;
+}
+
+.peaceful {
+  background-image: url("https://i.redd.it/d0zksghm0xt11.jpg");
+  background-repeat: round;
+  background-size: cover;
 }
