@@ -1,8 +1,10 @@
 $(document).ready(function() {
   $("#formOne").submit(function(event) {
-    var thought = $("input#thought").val();
-
-    $(".thought").text(thoughtInput).toUpperCase;
+    var thoughtInput = $("input#thought").val();
+    $("body").removeClass();
+    $("body").addClass("shouting");
+    
+    $(".thought").text(thoughtInput);
 
     $("#shout").show();
 
