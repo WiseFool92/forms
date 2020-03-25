@@ -1,16 +1,21 @@
 $(document).ready(function() {
-  $("button#hello").click(function() {
-    $("ul#hooman").prepend("<li>Hello!</li>");
-    $("ul#puter").prepend("<li>Why hello there!</li>");
-  });
+  $("#formOne").submit(function(event) {
+    var person1Input = $("input#person1").val();
+    var person2Input = $("input#person2").val();
+    var objectInput= $("input#object").val();
+    var questionInput = $("input#question").val();
+    var adjectiveInput = $("input#adjective").val();
+    var nounInput = $("input#noun").val();
 
-  $("button#goodbye").click(function() {
-    $("ul#hooman").prepend("<li>Goodbye!</li>")
-    $("ul#puter").prepend("<li>Goodbye, dear user!</li>");
-  });
+    $(".person1").text(person1Input);
+    $(".person2").text(person2Input);
+    $(".object").text(objectInput);
+    $(".question").text(questionInput);
+    $(".adjective").text(adjectiveInput);
+    $(".noun").text(nounInput);
 
-  $("button#stop").click(function() {
-    $("ul#hooman").prepend("<li>Stop copying me!</li>");
-    $("ul#puter").prepend("<li>Pardon me. I meant no offense</li>");
+    $("#story").show();
+
+    event.preventDefault();
   });
 });
