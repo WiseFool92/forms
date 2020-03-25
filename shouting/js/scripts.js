@@ -4,7 +4,7 @@ $(document).ready(function() {
     $("body").removeClass();
     $("body").addClass("shouting");
     
-    $(".thought").text(thoughtInput);
+    $(".thought").text(thoughtInput.toUpperCase());
 
     $("#shout").show();
 
